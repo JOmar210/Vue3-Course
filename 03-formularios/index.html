@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+
+<body>
+    <div id="app">
+        <h1>{{title}}</h1>
+        <form @submit.prevent="handleSubmit()">
+            <input type="text" placeholder="Nombre" v-model.trim="datos.name">
+            <input type="number" v-model.number="datos.age" min="15" max="100">
+            <hr>
+            <h2>Lenguajes Favoritos</h2>
+            <input type="checkbox" id="js" value="js" v-model="datos.langs">
+            <label for="js">JavaScript</label>
+            <input type="checkbox" id="php" value="php" v-model="datos.langs">
+            <label for="php">PHP</label>
+            <input type="checkbox" id="py" value="py" v-model="datos.langs">
+            <label for="py">Python</label>
+            <h2>Genero</h2>
+            <input type="radio" id="hombre" value="m" v-model="datos.gender">
+            <label for="hombre">Hombre</label>
+            <input type="radio" id="mujer" value="f" v-model="datos.gender">
+            <label for="mujer">Mujer</label>
+            <br><br>
+            <input type="submit">
+        </form>
+        <p>
+            {{datos}}
+        </p>
+    </div>
+
+
+
+    <script src="./js/main.js"></script>
+    <script src="./js/mountApp.js"></script>
+</body>
+
+</html>
