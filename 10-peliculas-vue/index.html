@@ -5,7 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Buscador de peliculas">
+    <!-- Metadata para PWA -->
+    <!-- Modificar color barra de estado ANDROID-->
+    <meta name="theme-color" content="#9ff4ff">
+    <!-- Optimizaciones de SEO -->
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <!-- Modificar barra de estado IOS-->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <title>Api Movies</title>
+    <!-- Iconos -->
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="./img/favicon.png">
+    <link rel="apple-touch-startup-image" href="./img/favicon.png">
+    <!-- Manifest -->
+    <link rel="manifest" href="./manifest.json">
+
     <script src="https://unpkg.com/vue@next"></script>
 </head>
 
@@ -32,6 +49,7 @@
 
 
     </div>
+    <script src="./load.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/mountApp.js"></script>
 </body>
