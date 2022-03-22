@@ -1,10 +1,4 @@
 <template>
-<<<<<<< HEAD
-    <div class="stickers">
-        <h1>Stickers</h1>
-    </div>
-</template>
-=======
   <div class="container mt-3 border">
     <h1 class="text-center">Stickers</h1>
     <search @accion="getStickers" />
@@ -36,8 +30,8 @@ export default {
     this.getStickers();
   },
   methods: {
-    async getStickers(search = "goku") {
-      const key = "MKQ26ZeLr2niNEDZfygMh30DhAFFunaN";
+    async getStickers(search = "poker") {
+      const key = "b3wWIkmRBDv7aYe5gV2ArEO4vnpEZFkX";
 
       this.load = true;
 
@@ -50,4 +44,3 @@ export default {
   },
 };
 </script>
->>>>>>> ce2bf962e4480bf18a61b978aac458e0bb67145d
